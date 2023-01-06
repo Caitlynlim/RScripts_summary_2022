@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>ILIAS :: E-Learning Universität Konstanz - Exercise 1</title>
+	
+    
+	
+	
+	
+	
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	
+	<link rel="apple-touch-startup-image" href="./templates/default/images/logo/ilias_logo_startup_320x460.png" /><!-- Startup image -->
+	<link rel="apple-touch-icon-precomposed" href="./templates/default/images/logo/ilias_logo_57x57-precomposed.png" /><!-- iphone -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./templates/default/images/logo/ilias_logo_72x72-precomposed.png" /><!-- ipad -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="./templates/default/images/logo/ilias_logo_114x114-precomposed.png" /><!-- iphone retina -->
+	
+	
+	<link rel="stylesheet" type="text/css" href="./Services/UICore/lib/yamm3/yamm/yamm.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="./Customizing/global/plugins/Services/UIComponent/UserInterfaceHook/SystemNotifications/templates/default/notifications.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/Accordion/css/accordion.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/Accordion/lib/owl.carousel.2.0.0-beta.2.4/assets/owl.carousel.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/YUI/js/2_9_0/container/assets/skins/sam/container.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/Calendar/css/panel_min.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/UIComponent/Tooltip/lib/qtip_3_0_3/jquery.qtip.min.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="./Services/MediaObjects/media_element_2_14_2/mediaelementplayer.min.css" media="screen" />
+	
+	<link rel="stylesheet" type="text/css" href="Services/Notifications/templates/default/osd.css" media="screen" />
+	
+	
+	<link rel="stylesheet" type="text/css" href="./Customizing/global/skin/unikn/unikn.css?vers=5-2-14-2018-03-15-$Id$" />
+	
+	<!-- <link rel="P3Pv1" href="" /> -->
+	<link rel="stylesheet" type="text/css" href="templates/default/delos_cont.css?vers=5-2-14-2018-03-15" />
+
+
+	
+	<script type="text/javascript" src="./Services/jQuery/js/2_2_4/jquery-min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/jQuery/js/ui_1_12_0/jquery-ui-min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/JavaScript/js/Basic.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/UICore/lib/bootstrap-3.2.0/dist/js/bootstrap.min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Customizing/global/plugins/Services/UIComponent/UserInterfaceHook/SystemNotifications/templates/default/xnot.min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/YUI/js/2_9_0/yahoo-dom-event/yahoo-dom-event.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/YUI/js/2_9_0/connection/connection-min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/UIComponent/Modal/js/Modal.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/YUI/js/2_9_0/container/container-min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/Notes/js/ilNotes.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/Tagging/js/ilTagging.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/UIComponent/AdvancedSelectionList/js/AdvancedSelectionList.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/UIComponent/Tooltip/lib/qtip_3_0_3/jquery.qtip.min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/UIComponent/Tooltip/js/ilTooltip.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/YUI/js/2_9_0/container/container_core-min.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/UIComponent/Overlay/js/ilOverlay.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/Help/js/ilHelp.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/Contact/BuddySystem/js/buddy_system.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/MediaObjects/media_element_2_14_2/mediaelement-and-player.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="Services/Notifications/templates/default/notifications.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/Accordion/js/accordion.js?vers=5-2-14-2018-03-15"></script>
+	<script type="text/javascript" src="./Services/Accordion/lib/owl.carousel.2.0.0-beta.2.4/owl.carousel.js?vers=5-2-14-2018-03-15"></script>
+	
+</head>
+<body class="std"  >
+<!-- drag_zmove used, e.g. in learnin modules to drag layout borders -->
+<div id="drag_zmove"></div>
+<div id="ilAll"><div id="ilTopBar" class="ilTopBar ilTopFixed hidden-print">
+	<div class="container-fluid ilContainerWidth">
+		<div class="row">
+			
+			<div class="ilTopTitle">Universität Konstanz</div>
+			
+			
+			
+				
+				<ul id="ilTopBarNav" class="">					
+					
+						<li><a class="glyph" href="ilias.php?baseClass=ilMailGUI" aria-label="Mail">
+
+
+<span class="glyphicon 
+
+
+
+
+
+
+
+
+
+
+
+
+glyphicon-envelope
+
+
+
+
+" aria-hidden="true"></span>
+
+
+
+
+
+
+
+</a>
+</li>
+					
+					
+					
+					
+					
+					<li id="ilMMSearch" class="dropdown yamm"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-search"></span></a>
+<ul class="dropdown-menu pull-right" role="menu">
+	<li>
+		<form class="" role="search" id="mm_search_form" action="ilias.php?baseClass=ilSearchController&cmd=post&rtoken=b2636eb1bdcfc825a3d93267c7e214c3&fallbackCmd=remoteSearch" method="post" target="_top">
+		<div class="input-group">
+			<input id="main_menu_search" class="form-control" type="text" name="queryString">
+			<span class="input-group-btn">
+				<input type="submit" class="btn btn-default" type="button" value="Go" />
+			</span>
+		</div>
+			<div class="yui-skin-sam" style="font-size: 75%;" id=""></div>
+			
+			<div id="ilMMSearchMenu">
+				<p>	» <a target="_top" href="ilias.php?baseClass=ilSearchController">Letztes Suchergebnis</a></p>
+				<p><input type="radio" name="root_id" value="1" checked="checked" id="ilmmsg" /> <label for="ilmmsg"> Im gesamten Magazin</label><br />
+				
+				<input type="radio" name="root_id" value="781389" id="ilmmsc" /> <label for="ilmmsc"> An der aktuellen Position</label></p>
+				
+				
+				
+			</div>
+			
+			<div id="mm_search_menu_ac"></div>
+			<script type="text/javascript">
+				il.Util.addOnLoad(
+						function()
+						{
+							if (typeof $ != "undefined")
+							{
+								// we must bind the blur event before the autocomplete
+								// item is added
+								$("#main_menu_search").on("blur", function(e) {
+									// prevent that the autocomplete list disappears when blur occurs
+									e.stopImmediatePropagation();
+								});
+
+								$("#main_menu_search").autocomplete({
+									source: "ilias.php?baseClass=ilSearchController&cmd=autoComplete" + "&search_type=4",
+									appendTo: "#mm_search_menu_ac",
+									open: function(event, ui) {
+										$(".ui-autocomplete").position({
+											my: "left top",
+											at: "left top",
+											of: $("#mm_search_menu_ac")
+										})
+									},
+									/*close: function(event, ui) {
+									 alert("close");
+									 console.log(event);
+									 console.log(ui);
+									 return false;
+									 },*/
+									minLength: 3
+								});
+
+
+								$("#ilMMSearchMenu input[type='radio']").change(function(){
+									$("#main_menu_search").focus();
+                                                                        
+                                                                        /* close current search */
+                                                                        $("#main_menu_search").autocomplete("close");
+                                                                        
+                                                                        /* append search type */
+                                                                        
+                                                                        var orig_datasource = "ilias.php?baseClass=ilSearchController&cmd=autoComplete";
+                                                                        var type_val = $('input[name=root_id]:checked','#mm_search_form').val();
+                                                                        
+                                                                        $("#main_menu_search").autocomplete("option",
+                                                                        {
+                                                                            source: orig_datasource + "&search_type=" + type_val
+                                                                        });
+                                                                        
+                                                                        /* start new search */
+                                                                        $("#main_menu_search").autocomplete("search");
+								});
+							}
+						}
+				);
+			</script>
+		</form>
+
+
+
+	<!-- <form class="navbar-form navbar-right" role="search" action="ilias.php?baseClass=ilSearchController&cmd=post&rtoken=b2636eb1bdcfc825a3d93267c7e214c3&fallbackCmd=remoteSearch" method="post" target="_top">
+	<div class="form-group">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="Search" name="queryString">
+			<span class="input-group-btn">
+				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+			</span>
+		</div>
+	</div>
+	</form> -->
+</li></ul>
+</li>
+
+					
+					<li id="mm_help" class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<span class="visible-xs-inline glyphicon glyphicon-question-sign"></span>
+						<span class="hidden-xs">Hilfe <span class="caret"></span></span></a>
+						<ul class="dropdown-menu pull-right" role="menu">
+
+
+
+
+<li class=""><a href="#" target="_top"  onclick="il.Help.listHelp(event, false);"><span>&nbsp;</span> Themen</a></li>
+
+
+
+
+
+<li class=""><a href="#" target="_top"  onclick="return il.Help.switchTooltips(event);"><span id="help_tt_switch_on" class="glyphicon glyphicon-ok"></span> Hilfe-Tooltips</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+					</li>
+					
+					
+					<li id="userlog" class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<span><img src="./Customizing/global/skin/unikn/images/no_photo_xsmall.jpg" alt="Simal Cinar" title="Simal Cinar" border="0"/><!--Simal Cinar--><span class="caret"></span></span>
+						</a>
+						<ul class="dropdown-menu pull-right" role="menu">
+							<li>
+								<a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToProfile" target="_top">Persönliche Daten und Profil</a>
+							</li>
+							<li>
+								<a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToSettings" target="_top">Einstellungen</a>
+							</li>
+							<li role="presentation" class="divider"></li>
+							<li>
+								<a href="logout.php?lang=de">Abmelden</a>
+							</li>
+						</ul>
+					</li>
+					
+					
+					
+
+				</ul>
+				
+		</div>
+	</div>
+</div>
+<div class="osdNotificationContainer"></div>
+
+<div class="ilMainHeader ilTopFixed hidden-print">
+	<header class="container-fluid ilContainerWidth">
+		<div class="row">
+			<a class="navbar-brand" href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToSelectedItems" target="_top">
+				<img src="./Customizing/global/skin/unikn/images/HeaderIcon.svg" alt="Logo" class="noMirror" /></a>
+		</div>
+	</header>
+</div>
+<div class="ilMainMenu ilTopFixed hidden-print">
+<div class="container-fluid ilContainerWidth">
+	<div class="row">
+		<nav id="ilTopNav" class="navbar navbar-default" role="navigation">
+			
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ilMainMenuEntries">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- <a class="navbar-brand" href="#">Brand</a> -->
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="ilMainMenuEntries">
+					<ul class="nav navbar-nav">
+	
+	<li class="dropdown"><a id="mm_desk_tr" href="#" class="dropdown-toggle" data-toggle="dropdown" >Persönlicher Schreibtisch <span class="caret"></span></a>
+		<ul class="dropdown-menu" role="menu">
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToSelectedItems" target="_top" id="mm_pd_sel_items" >Übersicht</a></li>
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToMemberships" target="_top" id="mm_pd_crs_grp" >Meine Kurse und Gruppen</a></li>
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToNotes" target="_top" id="mm_pd_notes" >Notizen und Kommentare</a></li>
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToNews" target="_top" id="mm_pd_news" >Nachrichten</a></li>
+
+
+
+
+<li class="divider"></li>
+
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToWorkspace" target="_top" id="mm_pd_wsp" >Mein Arbeitsraum</a></li>
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToPortfolio" target="_top" id="mm_pd_port" >Portfolio</a></li>
+
+
+
+
+<li class="divider"></li>
+
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToCalendar" target="_top" id="mm_pd_cal" >Kalender</a></li>
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilMailGUI" target="_top" id="mm_pd_mail" >Mail</a></li>
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToContacts" target="_top" id="mm_pd_contacts" >Kontakte</a></li>
+
+
+
+
+<li class="divider"></li>
+
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToProfile" target="_top" id="mm_pd_profile" >Persönliche Daten und Profil</a></li>
+
+
+
+
+
+<li class=""><a href="ilias.php?baseClass=ilPersonalDesktopGUI&cmd=jumpToSettings" target="_top" id="mm_pd_sett" >Einstellungen</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+	</li>
+	
+	
+	<li class="dropdown"><a id="mm_rep_tr" href="#" class="dropdown-toggle" data-toggle="dropdown" >Magazin <span class="caret"></span></a><span class="ilAccHidden">(Ausgewählt)</span>
+		<ul class="dropdown-menu" role="menu">
+
+
+
+
+<li class=""><a href="https://ilias.uni-konstanz.de/ilias/goto_ilias_uni_root_1.html" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_root.svg" border="0"/> Magazin - Einstiegsseite</a></li>
+
+
+
+<li class="dropdown-header ilLVNavEnt">Zuletzt besucht</li>
+
+
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="ilias.php?ref_id=781328&amp;cmd=infoScreen&amp;cmdClass=ilrepositorygui&amp;cmdNode=qi&amp;baseClass=ilRepositoryGUI" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_file.svg" border="0"/> data1.dta</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=crs_756487&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_crs.svg" border="0"/> Data Analysis with R</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=file_781332&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_file.svg" border="0"/> Session1.r</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=webr_768069&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_webr.svg" border="0"/> Lars Jones. Academic integrity and academic dishon…</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=webr_768075&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_webr.svg" border="0"/> Chicago Manual of Style Quick Citation Guide</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=webr_768072&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_webr.svg" border="0"/> APSA style manual</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=webr_768071&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_webr.svg" border="0"/> Academic writing manual University of Mannheim</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=crs_758000&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_crs.svg" border="0"/> Political Control of the Bureaucracy or Bureaucrat…</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=file_766612&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_file.svg" border="0"/> Schimmelfennig_Rittberger_2006.pdf</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="https://ilias.uni-konstanz.de/ilias/goto.php?target=crs_756875&client_id=ilias_uni" target="_top"  ><img src="./Customizing/global/skin/unikn/images/icon_crs.svg" border="0"/> Decision-Making in the European Union</a></li>
+
+
+
+
+
+<li class="ilLVNavEnt"><a href="#" target="_top"  onclick="return il.MainMenu.removeLastVisitedItems('ilias.php?cmd=removeEntries&cmdClass=ilnavigationhistorygui&cmdNode=fo&baseClass=ilnavigationhistorygui&cmdMode=asynch');">» Einträge löschen</a></li>
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+	</li>
+	
+	
+	
+	
+	
+	
+	
+</ul>
+
+					
+				</div><!-- /.navbar-collapse -->
+			
+		</nav>
+
+		
+		
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+<div id="mainspacekeeper" class="container-fluid ilContainerWidth ilFixedTopSpacer"><div id="xnot_container">
+	
+</div>
+	<div class="row" style="position: relative;">
+	
+	<div id="fixed_content" class=" ilContentFixed" >
+		<div id="mainscrolldiv" >
+			<h2 class="ilAccHidden">Brotkrumen-Navigation</h2>
+<ol class="breadcrumb hidden-print">
+	
+	
+	<!-- <img src="./Customizing/global/skin/unikn/images/icon_root.svg" alt="ILIAS-System" border="0" /> --><li><a href="ilias.php?ref_id=1&amp;cmd=frameset&amp;cmdClass=ilrepositorygui&amp;cmdNode=qi&amp;baseClass=ilrepositorygui"  target="_top" >Magazin</a></li>
+	
+	
+	
+	
+	<!-- <img src="./Customizing/global/skin/unikn/images/icon_cat.svg" alt="Kategorie" border="0" /> --><li><a href="ilias.php?ref_id=58&amp;cmd=frameset&amp;cmdClass=ilrepositorygui&amp;cmdNode=qi&amp;baseClass=ilrepositorygui"  target="_top" >Sektion Politik - Recht - Wirtschaft</a></li>
+	
+	
+	
+	
+	<!-- <img src="./Customizing/global/skin/unikn/images/icon_cat.svg" alt="Kategorie" border="0" /> --><li><a href="ilias.php?ref_id=240&amp;cmd=frameset&amp;cmdClass=ilrepositorygui&amp;cmdNode=qi&amp;baseClass=ilrepositorygui"  target="_top" >Politik- und Verwaltungswissenschaft</a></li>
+	
+	
+	
+	
+	<!-- <img src="./Customizing/global/skin/unikn/images/icon_cat.svg" alt="Kategorie" border="0" /> --><li><a href="ilias.php?ref_id=745907&amp;cmd=frameset&amp;cmdClass=ilrepositorygui&amp;cmdNode=qi&amp;baseClass=ilrepositorygui"  target="_top" >Lehrveranstaltungen SS 18</a></li>
+	
+	
+	
+	
+	<!-- <img src="./Customizing/global/skin/unikn/images/icon_crs.svg" alt="Kurs" border="0" /> --><li><a href="ilias.php?ref_id=756487&amp;cmd=frameset&amp;cmdClass=ilrepositorygui&amp;cmdNode=qi&amp;baseClass=ilrepositorygui"  target="_top" >Data Analysis with R</a></li>
+	
+	
+	
+	
+	<!-- <img src="./Customizing/global/skin/unikn/images/icon_exc.svg" alt="Übung" border="0" /> --><li><a href="ilias.php?ref_id=781389&amp;cmd=showOverview&amp;cmdClass=ilobjexercisegui&amp;cmdNode=8x:i8&amp;baseClass=ilExerciseHandlerGUI" >Exercise 1</a></li>
+	
+	
+</ol>
+
+			
+	
+	
+	<div class="media il_HeaderInner">
+		
+		<div class="ilHeadAction hidden-print" id="il_head_action">
+			<div id="tttt" style="white-space:nowrap;"> 
+<div class="btn-group">
+<!-- Important: The next a-tag had a this.blur(); in the onclick event before. Please do not add it again, see bug #8723 -->
+<button type="button"  class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" data-container="body" id="ilAdvSelListAnchorText_act_781389_pref_">
+<span><span class='hidden-xs'>Aktionen</span></span> <span class="caret"></span>
+</button>
+
+
+<ul class="dropdown-menu pull-right" role="menu" id="ilAdvSelListTable_act_781389_pref_">
+	
+	
+	
+	<li onclick="return ilNotes.listNotes(event, '1;781389;exc;911194;;0', 'il.Object.redrawActionHeader();');;">
+	<a id="act_781389_pref__" href="#" target="_top"><span class="xsmall">Notizen</span></a>
+	</li>
+	
+	
+	
+</ul>
+
+</div>
+<script type="text/javascript">
+il.AdvancedSelectionList.init['act_781389_pref_'] = function ()
+{
+	il.AdvancedSelectionList.add('act_781389_pref_', {"trigger_event":"click","auto_hide":false,"anchor_id":"ilAdvSelListAnchorElement_act_781389_pref_","asynch":false,"asynch_url":"","toggle_el":"lg_div_781389_pref_","toggle_class_on":"ilContainerListItemOuterHighlight"});
+	
+	il.AdvancedSelectionList.addItem('act_781389_pref_', '', '', 'Notizen');
+	
+	
+};
+il.AdvancedSelectionList.init['act_781389_pref_']();
+
+
+</script>
+</div>
+
+		</div>
+		
+		<div class="ilHeadAction hidden-print" id="il_head_action">
+			
+		</div>
+		
+		
+		
+			
+			<img id="headerimage" class="media-object" src="./Customizing/global/skin/unikn/images/icon_exc.svg" alt="Symbol Übung" title="Symbol Übung" />
+			
+				<h1 class="media-heading ilHeader"><a class="ilAccAnchor" id="il_mhead_t_focus" name="il_mhead_t_focus" >Exercise 1</a></h1>
+		
+		<div class="media-body">
+	
+	
+		</div>
+	</div>
+	
+    
+	
+	
+	
+	<div class="ilClearFloat"></div>
+
+<h2 class="ilAccHeadingHidden">Reiter</h2>
+<ul id="ilTab" class="nav nav-tabs ilCollapsable hidden-print" role="tablist">
+	
+	
+	
+	<li id="tab_content" class="active"><a href="ilias.php?ref_id=781389&amp;cmd=showOverview&amp;cmdClass=ilobjexercisegui&amp;cmdNode=8x:i8&amp;baseClass=ilExerciseHandlerGUI" target="">Übungseinheiten</a> <span class="ilAccHidden">(Ausgewählt)</span></li>
+	
+	<li id="tab_info" class=""><a href="ilias.php?ref_id=781389&amp;cmd=showSummary&amp;cmdClass=ilinfoscreengui&amp;cmdNode=8x:i8:bm&amp;baseClass=ilExerciseHandlerGUI" target="">Info</a></li>
+	
+	<li id="ilLastTab">
+		<a class="btn dropdown-toggle ilNoDisplay" data-toggle="dropdown" href="#">
+			... <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu" id="ilTabDropDown">
+		</ul>
+	</li>
+</ul>
+<span class="ilAccHidden"><a id="after_tabs" name="after_tabs"></a></span>
+
+<div class="ilTabsContentOuter"><div class="clearfix"></div>
+
+<span class="ilAccHidden"><a id="after_sub_tabs" name="after_sub_tabs"></a></span>
+
+
+
+<div>
+	
+	
+</div>
+
+<div class="container-fluid" id="ilContentContainer">
+	<div class="row">
+
+		<div id="il_center_col" class="col-sm-12">
+			
+			
+			
+			<div id="accordion_exc_ow_911194_1" class="il_VAccordionContainer" >
+
+<div class="il_VAccordionInnerContainer">
+<div class="il_VAccordionToggleDef"><div class="il_VAccordionHead" style=""><div class="ilExcAssignmentHead">
+	<img src="./Customizing/global/skin/unikn/images/scorm/not_attempted.svg" alt="Nicht bewertet" title="Nicht bewertet" />
+	<h3 class="ilAssignmentHeader">Exercise 1 (Obligatorisch)</h3>
+	<div>
+	<span>Startet am: Heute, 09:45</span>&nbsp;&nbsp;
+	</div>
+</div>
+</div></div>
+<div class="il_VAccordionContentDef ilAccHideContent"><div class="il_VAccordionContent" style=""><div class="ilExcAssignmentBody">
+
+<form name="formInfoScreen" method="post" action="ilias.php?ref_id=781389&amp;cmd=post&amp;cmdClass=ilinfoscreengui&amp;cmdNode=8x:i8:bm&amp;baseClass=ilExerciseHandlerGUI&amp;rtoken=b2636eb1bdcfc825a3d93267c7e214c3">
+
+
+
+
+<div class="ilInfoScreenSec form-horizontal" id="infoscreen_section_1">
+	<h3 class="ilHeader">Terminplan</h3>
+	
+	<div class="form-group">
+		<div class="il_InfoScreenProperty control-label col-xs-3">Startzeit</div>
+		<div class="il_InfoScreenPropertyValue col-xs-9">
+			Heute, 09:45
+			
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<div class="il_InfoScreenProperty control-label col-xs-3">Zu bearbeiten bis</div>
+		<div class="il_InfoScreenPropertyValue col-xs-9">
+			04. Mai 2018, 00:00
+			
+		</div>
+	</div>
+	
+	
+</div>
+
+<div class="ilInfoScreenSec form-horizontal" id="infoscreen_section_">
+	<h3 class="ilHeader"></h3>
+	
+	
+</div>
+
+
+
+</form>
+
+
+
+
+</div>
+</div></div>
+</div>
+
+<div style="clear:both;"></div>
+</div>
+<script type="text/javascript">
+	$(function () {
+		il.Accordion.add({"orientation":"vertical","int_id":"exc_ow_911194","behaviour":"FirstOpen","toggle_class":"il_VAccordionToggleDef","toggle_act_class":"il_VAccordionToggleActiveDef","content_class":"il_VAccordionContentDef","width":null,"active_head_class":"il_HAccordionHeadActive","height":null,"id":"accordion_exc_ow_911194_1","multi":false,"show_all_element":null,"hide_all_element":null});
+	});
+</script>
+
+			
+			
+			
+		</div>
+
+		
+
+		
+	</div>
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div id="minheight"></div>
+<footer id="ilFooter" class="ilFooter hidden-print"><div class="container-fluid ilContainerWidth">
+		<div class="row"><div class="ilFooterContainer"> <bdo class="" dir="ltr">powered by ILIAS-W3 (v5.2.14 2018-03-15)</bdo> | 
+
+<a href="https://ilias.uni-konstanz.de/ilias/goto_ilias_uni_impr_0.html" target="_blank">Impressum</a>
+
+
+
+
+</div></div></div></footer>
+
+</div>
+
+<script type="text/javascript">
+il.Util.addOnLoad(function() {
+il.Language.setLangVar('private_notes', "Private Notizen");
+il.Language.setLangVar('notes_public_comments', "\u00d6ffentliche Kommentare");
+ilNotes.setAjaxUrl('ilias.php?ref_id=781389&cmdClass=ilnotegui&cmdNode=8x:i8:5p:fy&baseClass=ilExerciseHandlerGUI&cmdMode=asynch');
+il.Language.setLangVar('tagging_tags', "Tags");
+ilTagging.setAjaxUrl('ilias.php?ref_id=781389&cmdClass=iltagginggui&cmdNode=8x:i8:5p:vr&baseClass=ilExerciseHandlerGUI&cmdMode=asynch');
+il.Object.setRedrawAHUrl('ilias.php?ref_id=781389&cmd=redrawHeaderAction&cmdClass=ilobjexercisegui&cmdNode=8x:i8&baseClass=ilExerciseHandlerGUI&cmdMode=asynch');
+il.Tooltip.add("tab_content", { context:"tab_content", my:"bottom center", at:"top center", text:"Obligatorische oder fakultative Aufgaben der Übung einsehen" } );
+il.Tooltip.add("tab_info", { context:"tab_info", my:"bottom center", at:"top center", text:"Anforderung, Gesamtzahl der Übungseinheiten, Erstellungsdatum und den Link zum Objekt einsehen, als Bookmark speichern und Tags vergeben" } );
+il.Overlay.add("mm_search_menu", {"yuicfg":{"visible":false,"fixedcenter":false},"trigger":null,"trigger_event":null,"anchor_id":null,"auto_hide":false,"close_el":null}); 
+il.Tooltip.add("help_tr", { context:"help_tr", my:"bottom center", at:"top center", text:"Online-Hilfe öffnen" } );
+il.Tooltip.add("help_tt", { context:"help_tt", my:"bottom center", at:"top center", text:"Hilfe-Tooltips an-/ausschalten" } );
+il.Help.setAjaxUrl('ilias.php?help_screen_id=exc/content/.781389&cmdClass=ilhelpgui&cmdNode=b0&baseClass=ilhelpgui&cmdMode=asynch');
+il.BuddySystem.setConfig({"http_post_url":"ilias.php?cmd=post&cmdClass=ilbuddysystemgui&cmdNode=yh:3f&baseClass=iluipluginroutergui&cmdMode=asynch&rtoken=b2636eb1bdcfc825a3d93267c7e214c3","transition_state_cmd":"transitionAsync"});
+il.BuddySystemButton.setConfig({"bnt_class":"ilBuddySystemLinkWidget"});
+il.BuddySystemButton.init();
+il.Tooltip.add("mm_pd_sel_items", { context:"mm_pd_sel_items", my:"left center", at:"right center", text:"Schnellzugriff auf ausgewählte Angebote" } );
+il.Tooltip.add("mm_pd_crs_grp", { context:"mm_pd_crs_grp", my:"left center", at:"right center", text:"Zeigt den aktuellen Stand der Gruppen- und Kursmitgliedschaften, Kalendereinträge, Nachrichten, Chat oder Bookmarks auf einen Blick und listet alle Mitgliedschaften auf." } );
+il.Tooltip.add("mm_pd_notes", { context:"mm_pd_notes", my:"left center", at:"right center", text:"Private Notizen und öffentliche Kommentare lesen und verfassen" } );
+il.Tooltip.add("mm_pd_news", { context:"mm_pd_news", my:"left center", at:"right center", text:"Nachrichten aus Kursen und Gruppen im Überblick, mit Hilfe eines Links zum jeweiligen ILIAS-Bereich der Nachricht wechseln" } );
+il.Tooltip.add("mm_pd_wsp", { context:"mm_pd_wsp", my:"left center", at:"right center", text:"Eigene Inhalte erstellen und zur Nutzung für andere Benutzer freigeben, freigegebene Inhalte anderer Benutzer einsehen" } );
+il.Tooltip.add("mm_pd_port", { context:"mm_pd_port", my:"left center", at:"right center", text:"Portfolios erstellen und für andere Benutzer freigeben, Portfolios anderer Benutzer ansehen" } );
+il.Tooltip.add("mm_pd_cal", { context:"mm_pd_cal", my:"left center", at:"right center", text:"ILIAS-Terminkalender erstellen und einsehen, Sprechstundenangebote anlegen und verwalten" } );
+il.Tooltip.add("mm_pd_mail", { context:"mm_pd_mail", my:"left center", at:"right center", text:"ILIAS-interne Mails empfangen und versenden, Verteilerlisten einrichten" } );
+il.Tooltip.add("mm_pd_contacts", { context:"mm_pd_contacts", my:"left center", at:"right center", text:"Andere Benutzer in einem Adressbuch speichern oder in Verteilerlisten zusammenfassen" } );
+il.Tooltip.add("mm_pd_profile", { context:"mm_pd_profile", my:"left center", at:"right center", text:"Persönliche Daten verwalten und ggf. in einem Profil veröffentlichen" } );
+il.Tooltip.add("mm_pd_sett", { context:"mm_pd_sett", my:"left center", at:"right center", text:"Sprach-, Zeit- und Anzeigeeinstellungen anpassen, ILIAS-Passwort ändern und Mail-Signatur festlegen" } );
+OSDNotifier = OSDNotifications({
+	closeHtml:            "<span class=\"sr-only\">Schlie\u00dfen<\/span><span class=\"glyphicon glyphicon-remove\"><\/span>",
+	initialNotifications: [],
+	pollingIntervall:     60,
+	playSound:            false
+});
+
+});
+</script>
+
+<script type="text/javascript">
+il.Util.addOnLoad(function() {
+il.Tooltip.init();
+
+});
+</script>
+
+</body>
+</html>
